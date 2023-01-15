@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<p><%=homeContent%></p>
+<% array.forEach(function(element){ %>
+    <h1><%=element.titleKey%></h1>
+    <p><%=element.postKey.substring(0,150)+"..."%> <a href="/posts/<%=element.titleKey%>" target="_blank">read more</a></p>
+<% }); %>
+<%- include('partials/footer'); -%>
+</array.length;>
